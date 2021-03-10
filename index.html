@@ -38,7 +38,8 @@
 
 
 				<a class="dropdown-item" href="#Erik_idea">Erik Driessen's Idea</a>
-
+<!-- 
+				<a class="dropdown-item" href="#Manifasto">Manifasto</a> -->
 				
 
 			  </div>
@@ -52,8 +53,14 @@
 				</a>
 				<div class="dropdown-menu">
 				  <a class="dropdown-item" href="#idea">What is my idea?</a>
-				  <a class="dropdown-item" href="#Prototype_goal">Prototype Goal</a>
 				  <a class="dropdown-item" href="#Implementation">Implementation</a>  
+
+				  <a class="dropdown-item" href="#Prototype_goal">Prototype Goal</a>
+				  <a class="dropdown-item" href="#Result">Result</a>  
+
+				  <a class="dropdown-item" href="#Recomendation">Recommendations</a>  
+
+
 				</div>
 			  </li>
 
@@ -63,8 +70,6 @@
 				</a>
 				<div class="dropdown-menu">
 				  <a class="dropdown-item" href="#channels">Which two channels I followed in Implementation of this project?</a>
-				  <a class="dropdown-item" href="#channel_1">Murtaza's Workshop</a>
-				  <a class="dropdown-item" href="#channel_2">Mark Rober</a>  
 				</div>
 			  </li>
 		  </ul>
@@ -81,18 +86,47 @@
 			</section>
 
 		<!-- Banner -->
-			<section id="intro">
-				<header>
-					<h2>Introduction</h2>
-				</header>
-				<p>
-					This is my Portfolio, below you will find all the information about my efforts in this semester. 
-				</p>
-				<footer>
-					<a href="#first" class="button style2 scrolly">Check Further</a>
-				</footer>
-			</section>
+			<section id="intro" >
+				<div class="row">
+					<div class="col-6">
+					<header>
+						<h2>Introduction</h2>
+					</header>
+					<p>
+						
+						My name is Anas Ahmad, I am 24 years old. And I am studying software engineering at Fontys University of Applied Sciences. This portfolio mainly focus
+						on semester 4, which I am doing in Creative Technology. 
+						<br> <br>
+						Dealing with hardware and electronics has been something that has intrigued me since the first semester. But, after all, I'm just getting started on this subject.
+										</p>
+				</div>
 
+					<div class="col-4">
+						<a href="#" class="image fit"><img src="images/DSC_0214.JPG" alt="" /></a>
+					</div>
+					
+				</div>
+			</section>
+			<!-- <section id="intro"  class="container style3 bg-light">
+				<div class="row">
+					<div class="col-6">
+					<header>
+						<h2>Introduction</h2>
+					</header>
+					<p>
+						
+						My name is Anas Ahmad, I am 24 years old software engineering student at Fontys University of Applied Sciences. This is my portfolio for semester 4,
+						which I am doing in Creative Technology. 
+					</p>
+				</div>
+
+					<div class="col-6">
+						<a href="#" class="image fit"><img src="images/Kick-off.jpg" alt="" /></a>
+					</div>
+					
+				</div>
+
+			</section> -->
 		<!-- Feature 1 -->
 		
 			<article id="Research"  class="container box style3 bg-light">
@@ -109,7 +143,7 @@
 					<div class="col-6">
 						<h2>Semester Kick-off</h2>
 	
-							<p>Semester begin with a kick-off in which a brief Introduction about the semester setup is given. </p>
+							<p>Semester begin with a kick-off in which a brief Introduction about the semester setup was given. </p>
 		
 						</div>
 				</div>
@@ -175,7 +209,7 @@
 				<section>
 					<header>
 						<h3>Thoughts/Ideas</h3>
-						<p>This is a summary of my two weeks creative thoughts.</p>
+						<p>This is a summary of my 4 day's creative thoughts.</p>
 					</header>
 					<section>
 						<ul>
@@ -226,7 +260,7 @@
 								<h4>Evening</h4>
 									1.Beard Trimming reminder app or machine can be created. e.g. it can give you a reminder in case you forget to trim  your beard.
 									<br>
-									2.
+									
 							</li>
 						</ul>
 					</section>
@@ -355,6 +389,16 @@
 
 				  </div>
 			  </article>
+
+			  <!-- <article id="Manifesto" class="container box style3 left bg-light">
+				  <div class="row">
+					  <h2>Have General Knowledge, be specified</h2>
+					  <div class="col-6">
+						<a class="image fit"><img src="images/Manifesto.png" alt="" /></a>
+
+					  </div>
+				  </div>
+			  </article> -->
 			  <article  id="vision" class="container box style3 right">
 				<div class="row">
 					<div class="col">
@@ -396,19 +440,42 @@
 					<p>In this crucial time. We all want to be safe therefore, my first Idea was to create a AR-glasses which can detect the distance between you and the 
 						person around you and inform you to keep some distance.<b> But</b> then I realized along with my teacher Geert Jan that this idea was not making much sense that is why we came up with another idea. 
 					   </p>
-						<h3>New Idea</h3>
+						<h4>New Idea</h4>
 						<b>COVID-vaccinators detecting by face</b> <br>
 						Basically, the idea is that you can see through your glasses if anyone is COVID-vaccinated or not. Although, in this project pictures will be stored
 						locally to compare faces but it can be extended to use the database and APIs.
 						<br>  <br>
+					</div>
+					<div id="Implementation" class="col-12">
 
-						<h3>Programming Language</h3>
-							To achieve this target Python programming was used along with opencv.
-						
-				</div>
+				
+						<h3>Implementation</h3>
+						<h4>Programming Language</h4>
+							<p>
+							   To achieve my target first of all I had to realize what programming language I should choose. There were different options such as Matlab, Python, Java and C/C++/C#. 
+							   Although I had experience with Java, C++ and C# but I have always been very curious to learn to Python. And Python is indeed one of the most popular languages for such 
+							   projects. Therefore, I decided to choose Python, however to learn that I took a short course On Udemy to learn the basics of Python. 
+							</p>
+							<p>
+								Now when I was done with the short course, I wanted to begin with my project. But then I realized that object detection or face_recognition was not possible alone in Python.
+								Then I researched and found out that OpenCV is library which can be used along with Python for such tasks. 
+							</p>
+							<p>
+								That is when I started learning OpenCV, I followed a short course on <a href="https://www.youtube.com/watch?v=WQeoO7MI0Bs&list=LL&ab_channel=Murtaza%27sWorkshop-RoboticsandAI">YouTube</a>  
+								of one of the  <a href="#">instructors</a> that I was following during the project.
+							</p>
+							<p>
+								In case you are interested in code, here is the <a href="https://github.com/warraich-a/s4-COVID-19-Vaccination-Detector">link</a>  to the project on Github.
+							</p>
+						</div>
+			
 				<div class="col-12">
 					   <h2 id="Prototype_goal">Prototype Goal</h2>
-					   <p> To begin with prototype I first had to decide where I want to attach the camera. </p>
+					   <p> In the beginning I was wondering more about creating 
+						   an end product, but then we got a workshop on Prototype which made me realize that
+						   Lo-Fi prototype does not have to be an end product. It is just one idea for user testing. Of course, it gave me some relief and 
+						   to begin with prototype I first had to decide where I want to attach the camera.
+					   </p>
 				</div>
 				<div class="col-6">
 					<h3>Idea 1</h3>
@@ -417,25 +484,95 @@
 				</div>
 				<div class="col-6">
 					<h3>Idea 2</h3>
-					<a class=""><img src="images/Sketch-2.jpeg" alt="" /></a>
+					<a class="image fit"><img src="images/Sketch-2.jpeg" alt="" /></a>
 					<p>Another idea was to attach the camera in the middle of the glasses</p>
 				</div>
 				<div class="col-12">
 				<p>I preferred the idea of attaching the camera in the middle, this way camera can have more for detections, however to correctly approach this idea
 					I followed the idea of David Neumann from Humber College Canada. The idea was pretty simple, all I needed was one straw, contact cement, novelty glasses 
 					and a clothes pin. 
-					And then connect the camera connected to glasses. </p>
+					And then connect the camera to glasses. </p>
 					
 					<h3>Example</h3>
 					<a class="image fit"><img src="images/Lo-Fi.png" alt="" /></a>
 
 				</div>
+				<div class="col-12">
+					<h1>Prototype Setup</h1>
+					<p>To start with actual prototype, first of all I need to have a smaller camera which could be attached with the glasses. The camera I had was night vision
+						camera, which was of course not a suitable option for my project. Then one day I just realized the it is possible to remove the infrared LEDs from both sides
+						of the camera. Therefore I simply removed the parts I did not need for my project. </p>
+					</div>
+						<div class="col-6">
+							<h4>Camera with Infrared LEDs</h4>
+							<a class="image fit"><img src="images/Camera.jpeg" /></a>
+						</div>
+						<div class="col-6">
+							<h4>Camera without Infrared LEDs</h4>
+							<a class="image fit"><img src="images/Camera2.jpeg" /></a>
+						</div>
+			
+					<div class="col-12">
+						<h4>Prototype Version 1.0</h4>
+						<p>Below you can see how I attached the camera in the middle of the glasses</p>
+							<a class="image fit"><img src="images/Final1.jpeg" /></a>
+							<a class="image fit"><img src="images/Final2.jpeg" /></a>
+					</div>
+					<div id="Result" class="col-12">
+						<h3>Result</h3>
+						And here is video of working results. <br>
+						 *hints: Green rectangle over the face means, the person is COVID-vaccinated, and red rectangle means not.
+						<video width="100%" height="600" controls>
+							<source src="images/Video.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						  </video>
+					</div>
+					<div id="Recomendation" class="col-12">
+						<h1>Recommendations</h1>
+						Since Raspberry pi can only process 0.9 FPS, and I have used Dlib with HOG model, 
+						that is why the performance is not very fast. Therefore, I have few recommendations written below:
+						<br> <br>
+							<ul>
+								
+								<li>Hardware</li>
+								<h6>NVIDIA GPUs</h6>
+								You can consider NVIDIA GPUs as hardware instead of Raspberry Pi.
+								<li>Software</li>
+								<h6>OpenCV or Dlib</h6>
+								If you are willing to deep dive into better perfomance and you have time for that, I would for sure recommend
+								face-detection with OpenCV - DNN method as it is pretty fast and very accurate, 
+								even for small sized faces. It also detects faces at various angles. 
+								<br>
+
+								However, if you do not want to go very deep in the topic, then I would recommend Dlib - HOG as it is one of the fastest methods on CPU. 
+								but it does not detect small sized photos or from different angles. 
+								
+								<br>
+								<br>
+							 	<b>	If you want to have a best performance, you should try YOLOv3 with NVIDIA GPUs. That will give you an extremely better and accurate performance. </b>
+							</ul>
+					</div>
 				</div>
+				</article>
+				<article id="channels" class="container box style bg-light ">
+					<h1>Resources</h1>
+					Here are two of the channels I have been following during the project.
+					<div class="col-12">
+					<ul>
+				
+						<li id="channel_1" ><a href="https://www.youtube.com/channel/UCYUjYU5FveRAscQ8V21w81A">Murtaza's Workshop - Robotics and AI </a>
+						<br>		If you want to learn more about OpenCV or object detection you should consider this channel.</li>
+						
+						<li id="channel_2"><a href="https://www.youtube.com/user/onemeeeliondollars">Mark Rober</a> <br>
+							I followed this channel to get an inspiration, its a great Tech Channel. </li>
+					</ul>
+						
+					</div>
 				</article>
 		<section id="footer">
 			<ul class="icons">
-				<li><a href="#" class="icon brands fa-github"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/warraich-a" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/anas-warraich/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 			</ul>
 		</section>
 
