@@ -6,9 +6,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.bg-custom-1 {
+  background-color: #85144b;
+}
 
+.bg-custom-2 {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
 body {
   line-height: 1;
+  background-color: #3f4b41;
 }
 
 ol.Comparison_questions {
@@ -223,7 +230,32 @@ br.clear {
   max-width: 100%;
   width: 1140px;
 }
+.navbar,
+.navbar-inverse {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  min-height: 80px;
+}
 
+.nav li {
+  display: inline;
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 1.7em;
+  font-weight: 300;
+  padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  background-color: #444444;
+  transition: 0.7s all linear;
+  height: 100%;
+}
 @media screen and (max-width: 1680px) {
   .container {
     width: 960px;
@@ -2300,7 +2332,15 @@ body.is-preload #header footer {
   * {
     text-shadow: none !important;
   }
-
+  body {
+    background-color: #203936;
+    background-image: url("../../images/bg-alt.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: auto, 100% auto;
+    background-position: top left, top center;
+    background-attachment: scroll, scroll;
+    font-size: 14pt;
+  }
   body,
   input,
   textarea,

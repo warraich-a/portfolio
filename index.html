@@ -14,66 +14,72 @@
 	
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		
+		<nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar-list-2">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="#header">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#intro">Intro</a>
+					</li>
+					
+					<li class="nav-item dropdown" href="#research">
+					  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Research
+					  </a>
+					  <div class="dropdown-menu">
+						<a class="dropdown-item" href="#creative_technology">What is creative technology?</a>
+						<a class="dropdown-item" href="#The_Creative_Brain">The Creative Brain</a>
+						<a class="dropdown-item" href="#Daily_thought">Daily Dose Of Thoughts</a>
+		
+						<a class="dropdown-item" href="#Log_book">Log Book</a>
+						<a class="dropdown-item" href="#Comparison_questions">5 Years Comparison</a>
+		
+		
+						<a class="dropdown-item" href="#Erik_idea">Erik Driessen's Idea</a>
+		<!-- 
+						<a class="dropdown-item" href="#Manifasto">Manifasto</a> -->
+						
+		
+					  </div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#vision">Vision</a>
+					</li>
+					<li class="nav-item dropdown" href="#project">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						  Project
+						</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#idea">What is my idea?</a>
+						  <a class="dropdown-item" href="#Implementation">Implementation</a>  
+		
+						  <a class="dropdown-item" href="#Prototype_goal">Prototype Goal</a>
+						  <a class="dropdown-item" href="#Result">Result</a>  
+		
+						  <a class="dropdown-item" href="#Recomendation">Recommendations</a>  
+		
+		
+						</div>
+					  </li>
+		
+					  <li class="nav-item dropdown" href="#resources">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						  Resources
+						</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#channels">Which two channels I followed in Implementation of this project?</a>
+						</div>
+					  </li>
+				  </ul>
+			</div>
+		  </nav>
 
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
-		  <ul class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link" href="#header">Home</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#intro">Intro</a>
-			</li>
-			
-			<li class="nav-item dropdown" href="#research">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-				Research
-			  </a>
-			  <div class="dropdown-menu">
-				<a class="dropdown-item" href="#creative_technology">What is creative technology?</a>
-				<a class="dropdown-item" href="#The_Creative_Brain">The Creative Brain</a>
-				<a class="dropdown-item" href="#Daily_thought">Daily Dose Of Thoughts</a>
-
-				<a class="dropdown-item" href="#Log_book">Log Book</a>
-				<a class="dropdown-item" href="#Comparison_questions">5 Years Comparison</a>
-
-
-				<a class="dropdown-item" href="#Erik_idea">Erik Driessen's Idea</a>
-<!-- 
-				<a class="dropdown-item" href="#Manifasto">Manifasto</a> -->
-				
-
-			  </div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#vision">Vision</a>
-			</li>
-			<li class="nav-item dropdown" href="#project">
-				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-				  Project
-				</a>
-				<div class="dropdown-menu">
-				  <a class="dropdown-item" href="#idea">What is my idea?</a>
-				  <a class="dropdown-item" href="#Implementation">Implementation</a>  
-
-				  <a class="dropdown-item" href="#Prototype_goal">Prototype Goal</a>
-				  <a class="dropdown-item" href="#Result">Result</a>  
-
-				  <a class="dropdown-item" href="#Recomendation">Recommendations</a>  
-
-
-				</div>
-			  </li>
-
-			  <li class="nav-item dropdown" href="#resources">
-				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-				  Resources
-				</a>
-				<div class="dropdown-menu">
-				  <a class="dropdown-item" href="#channels">Which two channels I followed in Implementation of this project?</a>
-				</div>
-			  </li>
-		  </ul>
-		</nav>
 		<!-- Header -->
 			<section id="header">
 				<header>
@@ -107,27 +113,6 @@
 					
 				</div>
 			</section>
-			<!-- <section id="intro"  class="container style3 bg-light">
-				<div class="row">
-					<div class="col-6">
-					<header>
-						<h2>Introduction</h2>
-					</header>
-					<p>
-						
-						My name is Anas Ahmad, I am 24 years old software engineering student at Fontys University of Applied Sciences. This is my portfolio for semester 4,
-						which I am doing in Creative Technology. 
-					</p>
-				</div>
-
-					<div class="col-6">
-						<a href="#" class="image fit"><img src="images/Kick-off.jpg" alt="" /></a>
-					</div>
-					
-				</div>
-
-			</section> -->
-		<!-- Feature 1 -->
 		
 			<article id="Research"  class="container box style3 bg-light">
 				<header>
@@ -528,7 +513,7 @@
 						  </video>
 					</div>
 					<div id="Recomendation" class="col-12">
-						<h1>Recommendations</h1>
+						<h3>Recommendations</h3>
 						Since Raspberry pi can only process 0.9 FPS, and I have used Dlib with HOG model, 
 						that is why the performance is not very fast. Therefore, I have few recommendations written below:
 						<br> <br>
