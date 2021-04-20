@@ -47,19 +47,16 @@ body {
     inset 0 0 5px rgb(53 86 129 / 50%), inset -50px 0 35px white; */
   border-radius: 0 10px 0 10px;
   position: fixed;
-  background: #0f0c29; /* fallback for old browsers */
+  background: #0f2027 !important; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to left,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027) !important;
+  box-shadow: 0 2px #35b882;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /* #nav-item a {
   color: rgb(247, 12, 12) !important;

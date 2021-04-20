@@ -76,7 +76,7 @@
 						  <a class="dropdown-item" href="#Trigger">Trigger</a>  
 		
 						  <a class="dropdown-item" href="#Ideation">Ideation</a>
-						  <a class="dropdown-item" href="#Specification&Design">Specification & Design</a>  
+						  <a class="dropdown-item" href="#Specification">Specification & Design</a>  
 		
 						  <a class="dropdown-item" href="#Realization">Realization</a>  
 						  <a class="dropdown-item" href="#Evaluation">Evaluation</a>  
@@ -84,7 +84,17 @@
 		
 						</div>
 					  </li>
-		
+					  <li class="nav-item dropdown" href="#reflection">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						  Reflection
+						</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#indProject">Individual Project</a>
+						  <a class="dropdown-item" href="#duoProject">Duo Project</a>
+						  <a class="dropdown-item" href="#ClientProject">Client Project</a>
+
+						</div>
+					  </li>
 					  <li class="nav-item dropdown" href="#resources">
 						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 						  Resources
@@ -93,17 +103,7 @@
 						  <a class="dropdown-item" href="#channels">Which two channels I followed in Implementation of this project?</a>
 						</div>
 					  </li>
-					  <li class="nav-item dropdown" href="#reflection">
-						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						  Reflection
-						</a>
-						<div class="dropdown-menu">
-						  <a class="dropdown-item" href="#Semester1">Semester 1</a>
-						  <a class="dropdown-item" href="#Semester2">Semester 1</a>
-						  <a class="dropdown-item" href="#Semester3">Semester 1</a>
-
-						</div>
-					  </li>
+					  
 				  </ul>
 			</div>
 		  </nav>
@@ -553,7 +553,7 @@
 								You can consider NVIDIA GPUs as hardware instead of Raspberry Pi.
 								<li>Software</li>
 								<h6>OpenCV or Dlib</h6>
-								If you are willing to deep dive into better perfomance and you have time for that, I would for sure recommend
+								If you are willing to deep dive into better performance and you have time for that, I would for sure recommend
 								face-detection with OpenCV - DNN method as it is pretty fast and very accurate, 
 								even for small sized faces. It also detects faces at various angles. 
 								<br>
@@ -700,7 +700,7 @@
 							<!-- <h3>Trigger + Dream</h3> -->
 						</div>
 						<div class="col-12"> 
-							<h1 id="Specification&Design"  style="background-color: #00A99D;">Specification & Design</h1>
+							<h1 id="Specification"  style="background-color: #00A99D;">Specification & Design</h1>
 								<h3> Know </h3>
 
 								Now it was time to deep dive into Specification and design. One of the first steps was to describe <b>Use Scenario</b> for example:
@@ -743,8 +743,13 @@
 								
 								<div class="col-12 float-left"> 
 									More people like the idea of single side screen. They said that it is a better way to experience the emotions of the other person and makes a connection.
-									That is why we decided to have a single screen
-								
+									That is why we decided to have a single screen.
+								<!-- </div>
+								<div class="col-12"> -->
+									<h4>Interaction Design</h4>
+									Here you can see the interaction design idea. Multiple single screen can be placed side by side and that way people behind and the user himself can see the visuals.
+									<a class="image fit"><img src="images/Visual-interactive-design.png" alt="" /></a>
+
 								
 							<!-- </div>
 							<div class="col-6 float-right">   --> <br>
@@ -790,8 +795,23 @@
 									
 								</div>
 								
-								That is why we decided to go for the first option. However, sockets are used to build a constant connection between two applications. 
+								That is why we decided to go for the first option. However, sockets are used to build a constant connection between two applications.
+								Now we was able to send the detected face location along with emotion score to Java through sockets connection. <br>
+								Below you can see a short video of the results. <br>
+									*hint: The left side with camera is Python side with emotion detection and the right side with moving white rectangle is Java side in Processing. 
+								<div class="col-12">
+									<video width="100%" height="600" controls>
+										<source src="images/FirstVersion.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									  </video>
+								</div>
 								
+								Now when were able to send the face location and emotion recognition to Java, it was time to start working on Visuals. Further explanation is provided in next sections. 
+								To give you have a better idea of how the process worked, here is the <b>Activity Diagram</b> for one of the emotions <br>
+								<div class="col-6">
+									<a class="image fit"><img src="images/Activity Diagram.png" alt="" /></a>  <br>
+
+								</div>
 								<!-- </div>
 							<div class="col-12"> -->
 							<h4>Requirements</h4>	  
@@ -818,17 +838,80 @@
 						
 						<div class="col-12"> 
 								<h1 id="Realization" style="background-color: #C1272D;">Realization</h1>
+								<h3>Build & Integrate</h3>
+								To start building the visuals, we brainstormed on each emotion to come up with the <b>ideas</b> of the visuals. For that we used <a href="https://padlet.com/rachellevdkar/yyonc3c45771edfh" target="_blank" >this Padlet</a>.
+								We started creating the visuals for each emotion. But at one point we realized people might not like to have all the emotions. Therefore we asked <b>feedback</b>
+								from few people. Most people did not want to have fear or disgust in their visuals, that is why we decided to not have those 2 visuals. Now we had 5 emotions, neutral,
+								happy, sad, angry, surprise. <br> <br>
+								Now when we decided to work on the remaining 5 visuals, the process of <b>Decomposition</b> begun. We started experimenting each visual separately in simple sketches. For example:
+								In a separate sketch the visuals for only sad was created, same approach applied to all the visuals. 
+								<br><br>
+								It was time to <b>integrate</b> the visuals to our project. That went pretty smooth for us.
+								Because we had the code for all the visuals ready in smaller projects. 
+								The <b>Evaluation</b> of the visuals can be seen below.
+								<br>
+								<div class="col-12"></div>
+									
+									<div class="col-6 float-left">
+										<ul>Happy = Flower that shines like sun and it will not just follow the face but also the size and intensity will increase and decrease 
+											with emotion score.
+										</ul> 
+										<a class="image fit"><img src="images/Happy-visuals.png" alt="" /></a>  <br>
 
-								<h5>Build + Integrate</h5>
-								
+									</div>
+									<div class="col-6 float-right">
+										<ul>Angry = Bright red hard visuals, they will not just follow the face but also the size and intensity will increase and decrease 
+											with emotion score. </ul>
+										<a class="image fit"><img src="images/Angry-visuals.png" alt="" /></a>  <br>
+
+									</div>
+									<div class="col-6 float-left">
+									<ul>Sad = Normal Rain, but more rain that follows your face and emotion score for example if you are more sad then more rain 
+										will be seen on your face location.
+									</ul>
+										<a class="image fit"><img src="images/Sad.png" alt="" /></a>  <br>
+									</div>
+									<div class="col-6 float-right">
+									<ul>Surprise = Fireworks that follows follows your face</ul>
+									<a class="image fit"><img src="images/bg.jpg" alt="" /></a>  <br>
+
+									</div>
+									<div class="col-6 float-left">
+									<ul>Neutral = Indication to show emotions</ul>
+									<a class="image fit"><img src="images/bg.jpg" alt="" /></a>  <br>
+
+									</div>
+							
+							
 
 						</div>
 						<div class="col-12" > 
 
 								<h1 id="Evaluation" style="background-color: #F15A24">Evaluation</h1>
 
-								<h5> Present + Test</h5>
+								<h5>Test</h5>
+								Before presentation it is always good to have some tests, that is why we did <b>functional testing</b> in which we created use cases for each 
+								scenario and test cases along with test plan. 
+								<h5>Present</h5>
+								Due to COVID-19 we have limitations in presentation, therefore we will only present in our University in front of our teachers and students. 
 
+
+						</div>
+					</article>
+
+					<article>
+						<div id="indProject" class="container box style3 bg-light">
+							<h3 >Individual Project </h3>
+								Since this semester is demand based and this project was an Individual Project, therefore I had a freehand in coming up with an idea and developing myself 
+								in various places other than just programming.
+								I developed my vision, which gave me a clear way to follow during the semester. The most important thing that I learned in this project 
+								was how to think creatively, for example Daily Dose Of Creative Thoughts, 5 Years Technology Comparison. Now I do not worry about being wrong, I realized no idea is wrong, it is just being different.
+								One other thing I learned  
+							<h3 id="duoProject">Duo Project</h3>
+								In this project I learned how to grow gradually by following different techniques such as having a Design Process ready.
+								 I am definitely going to use this approach for my future projects. I used to exaggerate simple problems by overthinking the technical sides in the very beginning of the project. In this project I learned 
+								 how <b>not</b> to think directly regarding programming because there are several tasks that should be done before programming such as inspiration, brainstorme, user research and most importantly tech research. 
+								 This way I had my concept clear in the start which definitely helped me in the tasks that come later, for example software and hardware research. 
 						</div>
 					</article>
 				<article id="channels" class="container box style bg-light ">
